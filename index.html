@@ -3,11 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="index.css/">
-    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://jamievos991.github.io/look-and-feel-styleguide/styleguide-ad-connect.css">
+    <title>Contact</title>
 </head>
+
 <body>
-    
+
+<header role="banner">
+
+    <!-- Logo -->
+    <div id="logo">
+        <img src="assets/Scherm­afbeelding 2025-11-20 om 15.33.02.png" alt="Ad connect logo">
+    </div>
+
+    <!-- Navigatie -->
+    <nav aria-label="Hoofdmenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Doorstroom.html">Doorstroom</a></li>
+            <li><a href="Lado-en-AD-profielen.html">Lado's</a></li>
+            <li><a href="nieuws.html">Nieuws</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Zoekbalk -->
+    <section class="searchbar-section"></section>
+        <form class="search-ad">
+            <input type="text" placeholder="Zoek een artikel...">
+            <button type="submit">Zoeken</button>
+        </form>
+    </section>
+
+</header>
+
+<!-- Contactformulier -->
+<main>
+    <section class="form-wrapper">
+        <h2>Contactformulier</h2>
+
+        <form class="styleguide-form">
+
+            <label class="label-ad">
+                <span>Naam</span>
+                <input type="text" name="naam" required>
+            </label>
+
+            <label class="label-ad">
+                <span>Email</span>
+                <input type="text" name="email" required>
+            </label>
+
+            <label class="label-ad">
+                <span>Onderwerp</span>
+                <input type="text" name="onderwerp">
+            </label>
+
+            <label class="label-ad">
+                <span>Bericht</span>
+                <textarea name="bericht" rows="6" required></textarea>
+            </label>
+
+            <input type="submit" value="Versturen">
+
+        </form>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-left links">
+            <h2>Overlegplatform Associate degree</h2>
+            <a href="#">Roland van der Poel (voorzitter)</a>
+            <a href="#">Carolien van Riswijk</a>
+            <a href="#">Nina Spithost</a>
+            <a href="#">Maruschka Kinds</a>
+            <a href="#">Demi Blok</a>
+        </div>
+
+        <div class="footer-right links">
+            <h2>Contact gegevens</h2>
+            <a href="#">platformassociatedegrees@outlook.com</a>
+        </div>
+
+    </div>
+</footer>
+
 </body>
 </html>
