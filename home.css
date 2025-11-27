@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  text-decoration: none;
+   
+}
+
+  body {
+  background-color:var(--white-color);
+  color: #363636;
+  line-height: var(--line-height-text);
+  text-align: center;
+  padding: 0 1rem;
+  font-size: var(--font-size-m);
+   }
+
+/* HEADER + LOGO */
+     
+
+#logo img {
+   width: 100%;       
+  height: auto;
+  object-fit: contain;
+  justify-content: center;
+
+   @media (min-width:1024px) {
+   min-width: 100%;
+    height:210px;
+    
+  }
+}
+
+/* SEARCHBAR*/
+ .search-ad{
+    margin-top: 20px;
+ }
+
+ #search-button{
+    margin-top: 20px;
+ }
+
+ /* Hamburger menu */
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #244363;
+  cursor: pointer;
+
+  @media (min-width: 1024px) {
+    display: none;
+    max-width: 0%;
+  }
+}
+#menu-checkbox {
+  display: none;
+}
+
+/* NAVIGATIE */
+
+nav {
+  background-color:var(--primary-color);
+  flex-direction: column;
+  gap: 8px;
+  padding: 1em;
+  border-radius: var(--border-radius);
+  width: 100%;
+  z-index: 10;
+  display: none;
+  
+  
+
+  @media (min-width: 1024px) {
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: var(--primary-color);
+    width: 100%;
+
+  }
+}
+
+nav li:hover {
+  background: var( --primary-lighter-color);
+  border-radius:var(--border-radius);
+}
+
+#menu-checkbox:checked + nav {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+  
+
+  @media (min-width:768px){
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 0.5em 1em;
+    justify-items: center;
+  }
+
+  @media (min-width:1024px) {
+    
+    display: flex;
+    flex-direction: row;
+    jusstify-content: space-evenly;
+    gap: 200px;
+  }
+}
+
+nav li {
+  list-style: none;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+nav a {
+  color: var(--white-color);
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 0;
+  display: block;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-s)
+}
+
+nav a:hover {
+  background: var(--white-color) 0.2;
+}
+
+
+/* MAIN CONTENT */
+main h1 {
+  margin-top: 1em;
+}
+
+main p {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: var(--font-size-l);
+
+    /* @media (min-width: 768px) {
+    max-width: 700px;
+  } */
+}
+
+ #Date{
+  color: #d09482;
+  text-decoration: none;
+  font-size: 30px;
+  align-items: center;
+}
+
+/* SECTION */
+.vergaderingen {
+  position: relative;
+  background-image: url("assets/Slim-vergaderen.jpg"); /* jouw eerste foto */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--white-color);
+  text-align: center;
+  padding: 100px 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+hr{
+    margin-top: 10px;
+}
+
+.vergaderingen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* donkere overlay */
+  backdrop-filter: blur(6px); /* vage foto */
+  z-index: 0;
+}
+
+.vergaderingen-overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.vergaderingen-content {
+  max-width: 600px;
+  background-color: var(--primary-color);
+  padding: 30px;
+  border-radius: 8px;
+  backdrop-filter: blur(3px);
+}
+
+.vergaderingen-content h2{
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color:  var(--white-color);
+}
+
+.vergaderingen-content p {
+  font-size: var(--font-size-s);
+  line-height: 1.6;
+}
+
+
+.textblok {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main h1{
+  color: var(--primary-color);
+  font-size: var(--font-size-heading-m);
+  margin-top: 1rem;
+}
+
+
+main h2 {
+  color:var(--primary-color);
+  font-size: var(--font-size-heading-m);
+  margin-top: 1rem;
+}
+
+#article-Evenement h1{
+  color: var(--primary-color);
+  font-size: 1.9rem;
+  margin-top: 1rem;
+}
+#article-Ad-Talent h1{
+    margin-top: 40px;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--primary-color);
+  color:  var(--white-color);
+  border-radius: 4px;
+  margin-top: 40px;
+  padding: 20px 10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.links h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.links a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+  main p {
+    max-width: 700px;
+  }
+
+ .vergadering{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .textblok {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .vergadering img {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  footer {
+    padding: 30px 40px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .vergaderingen {
+    padding: 60px 15px;
+  }
+
+  .vergaderingen-content {
+    padding: 20px;
+  }
+
+  .vergaderingen-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .vergaderingen-content p {
+    font-size: 0.9rem;
+  }
+  
+
+
+
+
