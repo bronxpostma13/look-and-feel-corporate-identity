@@ -141,7 +141,7 @@ nav ul {
     justify-items: center;
   }
 
-  @media (min-width:1024px) {
+  @media (min-width:1020px) {
     
     display: flex;
     flex-direction: row;
