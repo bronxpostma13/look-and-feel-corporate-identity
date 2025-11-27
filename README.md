@@ -5,18 +5,33 @@ Ontwerp en maak voor een opdrachtgever een website op basis van een bestaande hu
 De instructie vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/look-and-feel-corporate-identity/blob/main/docs/INSTRUCTIONS.md)
 
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+## Intro
+Hey ik ben Bronx Postma en ik werk momenteel mee aan de website Ad connect (https://www.deassociatedegree.nl/). 
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Onze taak voor de website was vooral ,deze zo overzichtelijk en toegankelijk mogelijk maken  
+
+Terwijl we deze voor zowel studenten als professionals optimaal houden qua layout en gerepresenteerde informatie. 
+
+In deze sprint heb ik mij gefocuseerd op de style guide toe te passen op mijn website.
+Dit zorgt ervoor dat al mijn paginas en site er meer als een geheel gaan uitzien 
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+Bij het maken van de website heb ik tot nu toe alleen maar HTML en CSS gebruikt.  
+HTML
 
-## Bronnen
+IK heb in html met dingen zoals forms , labels en checkboxes gewerkt om een hamburger menu te kunnen maken en een formulier.
+
+
+CSS
+
+In CSS heb ik veel met media query's gewerkt om de website responsive te maken.
+Ook heb ik veel gebruikt gemaakt van custom properties.
+
+Deze heb ik uiteraard ook genest. En ik heb veel hover functies gebruikt
+
+Ook heb ik gemaakt gebruikt van animaties en keyframes
+
 
 ## Licentie
 
